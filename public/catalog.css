@@ -1,0 +1,215 @@
+/* catalog.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    color: #fff;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.user-config {
+    display: flex;
+    align-items: center;
+}
+
+.logo img,
+.user-icon img,
+.config img {
+    width: 30px;
+    height: 30px;
+}
+
+.user-icon,
+.config {
+    margin-left: 10px;
+}
+
+nav {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.courses {
+    padding: 20px;
+    text-align: left;
+}
+
+.courses h2 {
+    margin: 10px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.courses h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #666;
+}
+
+.course-card {
+    display: inline-block;
+    width: 28%;
+    margin: 15px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.course-card:hover {
+    background-color: #e2e2e2;
+    transform: scale(1.05);
+}
+
+.course-card img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.course-card h4 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.stars {
+    margin: 5px 0;
+    color: #FFD700;
+    font-size: 14px;
+}
+
+.course-card p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.course-card p.price {
+    font-size: 18px;
+    color: #FF4500;
+    font-weight: bold;
+}
+
+/* Estilos para o botão de upload */
+.upload-button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#uploadButton {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#uploadButton:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}

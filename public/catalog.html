@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Cursos</title>
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <h1>CATÁLOGO DE CURSOS</h1>
+        <div class="user-icon">
+            <img src="images/user-icon.png" alt="Ícone de usuário">
+        </div>
+        <div class="config">
+            <img src="images/config.png" alt="Configurações">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Mais Populares</a></li>
+            <li><a href="#">Novo</a></li>
+            <li><a href="#">Populares</a></li>
+        </ul>
+    </nav>
+
+    <section class="courses">
+        <h2>Cursos de Certificações de TI</h2>
+        <h3>Cursos para você começar</h3>
+
+        <div class="course-card" onclick="location.href='course-description.html'"> <!-- Adicionado onclick -->
+            <img src="images/html-icon.png" alt="HTML Icon">
+            <h4>Fundamentos HTML</h4>
+            <div class="stars">★★★★☆</div>
+            <p>João Gomes</p>
+            <p class="price">Gratuito</p>
+        </div>
+
+        <div class="course-card">
+            <img src="images/css-icon.jpg" alt="CSS Icon">
+            <h4>Fundamentos CSS</h4>
+            <div class="stars">
+                ★★★☆☆
+            </div>
+            <p>André Santos</p>
+            <p class="price">R$27,90</p>
+        </div>
+
+        <div class="course-card">
+            <img src="images/js-icon.jfif" alt="JavaScript Icon">
+            <h4>Fundamentos JavaScript</h4>
+            <div class="stars">
+                ★★★★★
+            </div>
+            <p>Pedro Nascimento</p>
+            <p class="price">R$88,88</p>
+        </div>
+        
+        <!-- Botão para Upload de Curso -->
+        <div class="upload-button-container">
+            <button id="uploadButton">Adicionar Novo Curso</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-section">
+            <h4>INSTITUCIONAL</h4>
+            <p><a href="#">Página Institucional</a></p>
+            <p><a href="#">Sobre nós</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>CONTATO</h4>
+            <p>📞 (00) 0000-0000</p>
+            <p>✉ easy.me@gmail.com</p>
+        </div>
+        <div class="footer-section">
+            <h4>AJUDA</h4>
+            <p><a href="#">Política de privacidade</a></p>
+        </div>
+    </footer>
+
+    <script src="catalog.js"></script>
+</body>
+</html>
