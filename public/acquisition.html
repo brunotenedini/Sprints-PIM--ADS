@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Compra - Easy.me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: black;
+            padding: 10px 20px;
+            color: white;
+        }
+        .header-button img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .company-name {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+        .company-name:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 150px;
+        }
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+        .details {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        .details p {
+            margin: 8px 0;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        button {
+            text-decoration: none;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-button">
+            <img src="https://thumbs.dreamstime.com/b/hamb%C3%BArguer-tal-como-o-menu-modo-escuro-%C3%ADcone-glifo-ui-tr%C3%AAs-linhas-mais-op%C3%A7%C3%B5es-design-de-interface-usu%C3%A1rio-s%C3%ADmbolo-branco-da-252012553.jpg" alt="Menu">
+        </div>
+        <a href="https://easy.me" class="company-name">Easy.me</a>
+        <div class="header-button">
+            <img src="user-icon.png" alt="Usuário">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="logo">
+            <img src="./images/html-icon.png" alt="Logo Curso HTML">
+        </div>
+        <h1>Parabéns, você adquiriu o curso com sucesso!</h1>
+        <div class="details">
+            <p><strong>Curso:</strong> HTML - Fundamentos e Prática</p>
+            <p><strong>Professor:</strong> João Gomes</p>
+            <p><strong>Data de Início:</strong> 27 de Novembro de 2024</p>
+            <p>Estamos muito felizes em ter você no nosso curso! Prepare-se para aprender tudo sobre HTML e dar um grande passo na sua jornada de desenvolvimento.</p>
+        </div>
+        <div class="button-container">
+            <button onclick="location.href='/management'">Ir para Gestão de Cursos</button>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -48,6 +48,18 @@ app.get("/upload", async (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'upload.html'));
 });
 
+// Rota para a página de aquisição de curso
+app.get("/acquisition", async (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'acquisition.html'));
+});
+
+// Rota para a página de gestão de cursos
+app.get("/management", async (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'management.html'));
+});
+
+
+
 // Endpoint para cadastrar usuário
 app.post("/cadastrar", async (req, res) => {
     const { nome, data_nascimento, cpf, email, senha } = req.body;
@@ -162,3 +174,5 @@ app.post("/upload", upload.single('imagem_curso'), async (req, res) => {
 app.listen(4000, () => {
     console.log("Servidor iniciado na porta 4000: http://localhost:4000");
 });
+
+
