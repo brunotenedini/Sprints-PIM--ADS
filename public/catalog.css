@@ -7,6 +7,8 @@ body {
     padding: 0;
 }
 
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -24,15 +26,19 @@ header h1 {
     left: 50%;
     transform: translateX(-50%);
 }
-
 .logo {
     display: flex;
     align-items: center;
 }
 
 .user-config {
-    display: flex;
-    align-items: center;
+    display: block;
+    align-items: isolate;
+}
+
+.user-icon img {
+    width: 36px;
+    height: 36px;
 }
 
 .logo img,
@@ -42,7 +48,9 @@ header h1 {
     height: 30px;
 }
 
-.user-icon,
+.user-icon {
+    margin-left: auto;
+}
 .config {
     margin-left: 10px;
 }
@@ -100,7 +108,7 @@ nav ul li a:hover::after {
 
 .courses {
     padding: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .courses h2 {
