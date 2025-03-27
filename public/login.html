@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login de Usuário</title>
+    <title>Login | Easy.Me </title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Login</h1>
+    <div class="margin-top"></div>
+    
+    <div class="image-container">
+        <img src="https://img.freepik.com/fotos-gratis/grupo-de-tres-jovens-iniciantes-bonitos-sentado-no-espaco-de-coworking-leve-falando-sobre-o-projeto-futuro-olhando-atraves-de-exemplos-de-design-no-tablet-digital-amigos-sorrindo-conversando-sobre-trabalho_176420-8284.jpghttps://img.freepik.com/fotos-gratis/grupo-de-tres-jovens-iniciantes-bonitos-sentado-no-espaco-de-coworking-leve-falando-sobre-o-projeto-futuro-olhando-atraves-de-exemplos-de-design-no-tablet-digital-amigos-sorrindo-conversando-sobre-trabalho_176420-8284.jpg" alt="login"> 
+    </div> 
+    
+    <div class="container"> 
+        <h1>Easy.Me</h1>
         <form id="loginForm">
             <div class="form-group">
                 <label for="email">Email:</label>
@@ -18,12 +24,18 @@
             <div class="form-group">
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha" required minlength="6">
+                <a href="#" class="link forgot-password">Esqueci minha senha</a>
             </div>
             <button type="submit">Entrar</button>
         </form>
         <div id="mensagem"></div>
+        <div class="links-container">
+            <a href="index.html" class="link">Faça seu cadastro</a>
+        </div>
     </div>
-
+    
+    <div class="margin-bottom"></div>
+    
     <script src="login.js"></script>
 </body>
 </html>

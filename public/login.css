@@ -45,14 +45,14 @@ input {
 }
 
 input:focus {
-    border-color: #28a745;
+    border-color: blue;
     outline: none;
 }
 
 button {
     width: 100%;
     padding: 10px 0;
-    background-color: #28a745;
+    background-color: black;
     border: none;
     border-radius: 4px;
     color: #fff;
@@ -61,11 +61,74 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: blue;
 }
 
 #mensagem {
     margin-top: 20px;
     text-align: center;
     font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+    flex-direction: row; /* Flex para colocar a imagem à esquerda e o conteúdo à direita */
+}
+.margin-top {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    top: 0;
+}
+.margin-bottom {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    bottom: 0;
+}
+.container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 200px;; /* Ajuste da posição do conteúdo */
+    top: 50%;
+    transform: translateY(-50%);
+}
+.image-container {
+    width: 80%; /* A imagem ocupa a metade esquerda da tela */
+    height: 60vh; /* Imagem ocupa a altura inteira */
+    right: 1200px;
+}
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.link {
+    text-decoration: none;
+    color: #007BFF;
+    margin: 5px 0;
+}
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    margin-top: 5px;
 }
